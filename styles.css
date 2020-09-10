@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #161616;
+    color: white;
+    font-family: "Monument Extended", sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    display: flex;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .line {
+    width: 80%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper .line span {
+    position: absolute;
+    font-size: 2rem;
+    line-height: 4.2rem;
+}

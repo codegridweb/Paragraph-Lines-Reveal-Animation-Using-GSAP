@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Reveal Animation</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="line">
+                <span>I code designs. Rad designs for rad learners.</span>
+            </div>
+            <div class="line">
+                <span> The mission and the vision are to explore, scavenge and play</span>
+            </div>
+            <div class="line">
+                <span>with creative designs. Because of my passion for design, </span>
+            </div>
+            <div class="line"><span>precision and details, I created Codegrid to bring</span></div>
+            <div class="line"><span>concepts of web designing to you.</span></div>
+        </div>
+        <script>
+            const textrev = gsap.timeline();
+
+            textrev.from(".line span", 1.8, {
+                y: 200,
+                ease: "power4.out",
+                delay: 1,
+                skewY: 10,
+                stagger: {
+                    amount: 0.4,
+                },
+            });
+        </script>
+    </body>
+</html>
